@@ -10,41 +10,55 @@
 		h2 {color:#33ff33; font-size:40px;}
 	</style>
 
+	<script>
+		function change1() {
+  			document.getElementById("pic").src = "mountain.jpg";
+  			document.getElementById("h2text").innerText = "靜宜資管";
+		}
+
+		function change2() {
+  			document.getElementById("pic").src = "cliff.jpg";
+  			document.getElementById("h2text").innerText = "ZHANG,JIA-ZHEN";
+
+		}
+	</script>
 </head>
 <body>
 	<table width="70%">
-	 <tr>
-		<td>
-			<img src="cliff.jpg" width="110%"></img>
-		</td>>
-		<td>
-	    <h1>張家榛</h1>
-	</td>
-</tr>
-</table>
+		<tr>
+			<td>
+				<img src="cliff.jpg" width="110%" id="pic" onmouseover="change1()" onmouseout="change2()"></img>
+			</td>>
 
+			<td>
+				<h1>張家榛</h1>
+				<h2  id="h2text">ZHANG,JIA-ZHEN</h2>
+			</td>
+		</tr>
+	</table>
 <table width="70%" border="1">
-</td>
+		<tr>
+			<td>
+				個人網頁：<a href="https://github.com/abloui/about/commits/master">https://github.com/abloui/about/commits/master</a><br>
 
-	<td>
-	     個人網頁:<a href="https://github.com/abloui/about/commits/master">https://github.com/abloui/about/commits/master</a><br>
-         Telephone: 0911146328<br> 
-	     E-Mail: twnddf125648@gmail.com<br>
-   </td>
+	Tel:<a href="tel:0911146328">0911146328</a><br>
+				E-Mail: <a href="twnddf125648@gmail.com">twnddf125648@gmail.com</a><br>
+			</td>
 
-   <td>
-         大象席地而坐電影配樂<br>
-	     <audio controls>
-		 <source src="elephant.mp3" type="audio/mP3">
-	     </audio><br>
-    <td>
+			<td>
+				大象席地而坐電影配樂<br>
+				<audio controls>
+					<source src="elephant.mp3" type="audio/mP3">
+				</audio><br>
+			</td>
 
-    <td>
-	      不要去臺灣<br>
-	      <iframe src="https://www.youtube.com/embed/pW88QFpHXa8" allowfullscreen></iframe>
-    </td>
- </tr>
-</table>
+			<td>
+				不要去臺灣<br>
+				<iframe src="https://www.youtube.com/embed/pW88QFpHXa8" allowfullscreen></iframe>
+			</td>
+		</tr>
+	</table>		
+
 	
 </body>
 </html>
